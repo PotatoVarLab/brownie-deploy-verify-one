@@ -1,0 +1,24 @@
+compiler:
+    # evm_version: null
+    solc:
+        # version: null
+        optimizer:
+            enabled: false
+            # enabled: true
+            # runs: 200
+        remappings: null
+
+# need dotenv
+dotenv: .env
+
+networks:
+    # ropsten: https://ropsten.infura.io/v3/b7e1ee4af9e64991bda0dbd1220a54c2
+    Ropsten:
+        chainid: 3
+        id: ropsten
+        host: https://mainnet.infura.io/v3/${WEB3_INFURA_PROJECT_ID}
+        explorer: https://api-ropsten.etherscan.io/api
+
+wallets:
+    # from_key: dc6792f9ad5cf364a6c9fe16276dd4c181b9ee983d9b57d72044bbc008cb88d3
+    from_key: ${PRIVATE_KEY}
