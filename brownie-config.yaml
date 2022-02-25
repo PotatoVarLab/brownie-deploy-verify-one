@@ -12,7 +12,6 @@ compiler:
 dotenv: .env
 
 networks:
-    # ropsten: https://ropsten.infura.io/v3/b7e1ee4af9e64991bda0dbd1220a54c2
     Ropsten:
         chainid: 3
         id: ropsten
@@ -20,5 +19,4 @@ networks:
         explorer: https://api-ropsten.etherscan.io/api
 
 wallets:
-    # from_key: dc6792f9ad5cf364a6c9fe16276dd4c181b9ee983d9b57d72044bbc008cb88d3
     from_key: ${PRIVATE_KEY}
